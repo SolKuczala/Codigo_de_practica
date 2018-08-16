@@ -29,12 +29,21 @@ function multiplicar(num1,num2) {
         return resultadoParcial
     }
   }
+  console.log(multiplicar(2,3));
 
-console.log(multiplicar(2,-4));//6 expected
+  //dividir
 
-//console.log(multiplicar(2,3))//6
-// for (let index = 0; index < array.length; index+) {
-//     const element = array[index];
-    
-// }
-    
+// division es primer numero dividido el segundo
+// usando resta :al primer numero le saco de a lo que el segundo numero 
+// hasta que se me acabe el primero
+                
+function dividir(num1,num2) {
+    let resultadoParcial = 0;
+    for (let index = 0; index > 0; index++) {
+        resultadoParcial = num1-num2 ;
+        if (num1 === 0) {
+           break;
+           return 
+           //how many times passed; 
+        }
+    }
