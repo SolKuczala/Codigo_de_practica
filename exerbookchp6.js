@@ -58,7 +58,31 @@ function Aanimals(params) {
 }
 
 //random string generator
+function randomSG(){
+let alphabet = "abcdefghijklmnopqrstuvwxyz";
+let randomString = '';
+while (randomString.length < 6) {
+    let randomIndex = Math.floor(Math.random() * alphabet.length)
+    randomString += alphabet[randomIndex];   
+}
+console.log (randomString);
+}
+//hacker speak, hacer
 
+let input = "javascript is awesome";
+let output = "";
+for (let index = 0; index < input.length; index++) {
+        if (input[index] === 'a') {
+            output += '4';      
+        }else if (input[index] === 'i' ) {
+            output += '1';
+        }else if (input[index] === 'e') {
+            output += '3';
+        }else if (input[index] === 'o') {
+            output += '0';
+        }else{
+            output += input[index];
+        }
+}
 
-
-
+console.log(output);

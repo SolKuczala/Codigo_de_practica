@@ -1,0 +1,39 @@
+//30 day vanilla js
+//drumkit
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>drum kit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="keys">
+        <div data-key= "65" class ="key">
+            <kbd>A</kbd>
+            <span class="sound">clap</span>//repeat
+        </div>
+        <div data-key= "83" class ="key"></div>
+        <div data-key= "68" class ="key"></div>
+        <div data-key= "70" class ="key"></div>
+        <div data-key= "71" class ="key"></div>
+        <div data-key= "72" class ="key"></div>
+        <div data-key= "74" class ="key"></div>
+        <div data-key= "75" class ="key"></div>
+        <div data-key= "76" class ="key"></div>
+
+    </div>
+
+    <audio data-key="65" src="sounds/clap.wav"></audio>
+    //repeat
+
+    <script>
+    window.addEventListener('keydown', function (e) {
+        const audio = document.querySelector('audio')        
+    }</script>
+</body>
+</html>

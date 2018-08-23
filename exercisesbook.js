@@ -12,6 +12,20 @@ function permiso() {
     }
 }
 
+//new insults ponele
+let insults = ['forro','pelotudo','caraculo','pija rota','conshudo'];
+console.log('Sos un '+ insults[Math.floor(Math.random()* insults.length)] + ' y un '
++ insults[Math.floor(Math.random()* insults.length)]);
+
+//more sophisticated insults
+let partesDelCuerpo = ['panza','pelo','culo','cabeza'] 
+let Adjetivos = ['oloroso','grande','horrible','peludo']
+let partesDunAnimal = ['puercoespin','mono','comadreja','oruga']
+const randomParteCuerpo = partesDelCuerpo[Math.floor(Math.random()* partesDelCuerpo.length)];
+let randomAdjetivo = Adjetivos[Math.floor(Math.random()* Adjetivos.length)];
+let randomParteAnimal = partesDunAnimal[Math.floor(Math.random()* partesDunAnimal.length)];
+console.log('tu '+ randomParteCuerpo + ' es tan '+ randomAdjetivo + ' como un/a ' + randomParteAnimal);
+
 //magic ball
 function mball() {
     let comidasRandom = [

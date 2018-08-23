@@ -32,18 +32,15 @@ function multiplicar(num1,num2) {
   console.log(multiplicar(2,3));
 
   //dividir
-
-// division es primer numero dividido el segundo
-// usando resta :al primer numero le saco de a lo que el segundo numero 
-// hasta que se me acabe el primero
-                
-function dividir(num1,num2) {
-    let resultadoParcial = 0;
-    for (let index = 0; index > 0; index++) {
-        resultadoParcial = num1-num2 ;
-        if (num1 === 0) {
-           break;
-           return 
-           //how many times passed; 
-        }
+function dividir(a,b) {
+    
+    let resto = a
+    let cociente = 0
+    while(resto >= b){
+    resto = resto-b
+    cociente++
     }
+    return cociente;
+    }
+
+console.log(dividir(15,3));
