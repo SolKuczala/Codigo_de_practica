@@ -12,10 +12,8 @@ let word = words[Math.floor(Math.random()*words.length)]
 let answerArray = []
 
 for (let index = 0; index < word.length; index++) {
-    answerArray[i] = "_";
+    answerArray[index] = "_";
 }
-
-let remainingLetters = word.length;
 //the game loop
 let remainingLetters = word.length;
 while (remainingLetters > 0) {
