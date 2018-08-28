@@ -1,42 +1,48 @@
 // //hangaman game
+//mostrar bienvenida
+alert('Welcome to Hangman!')    
 //Create an array of words
     let words =[
     'javascript',
     'monkey',
     'pancake',
-    'saludo'
+    'saludo',
+    'escarlata',
+    'embargable'
 ];
 //pick a random word
 let word = words[Math.floor(Math.random()*words.length)]
-//set up the answer array
+//set up the answer array que va a ser el largo de la palabra que se dio
 let answerArray = []
-
 for (let index = 0; index < word.length; index++) {
     answerArray[index] = "_";
 }
 //the game loop
+
 let remainingLetters = word.length;
-while (remainingLetters > 0) {
-    //showing the player progress
-    alert(answerArray.join(''));
-    //get a guess from the player
-    let guess = prompt('guess a letter,or click Cancel to stop playing.')
+//let numberOfGuesses = 15;
+while (remainingLetters > 0 && numberOfGuesses > 0) {
+    alert('This is your word to guess: ' + answerArray.join(''));
+    let guess = prompt('Enter a single letter, or click Cancel to stop playing.')
     if (guess === null){
-        //exit the game loop
         break;
     }else if (guess.length !== 1){
         alert('please enter a single letter.');
     }else{
-        //update
         for (let j = 0; j < word.length; j++) {
             if (word[j] === guess) {
                 answerArray[j] = guess;
                 remainingLetters--;
-            }
+            }//else //si es distinto (la palabra entera) bajame 1 oportunidad de guess
+        
         }
-    }
-    //end of the game loop  
+    }//end of the game loop  
 }    
-//show the answer and congratulates
-alert(answerArray.join(""));
+//show the answer and congratulates or show you lose
+if (remainingLetters === 0){
+    alert(answerArray.join(""));
 alert("Good job!the answer was " + word);
+}else if(numberOfGuesses === 0){
+    alert('Sorry, you running out of guesses :(' + ' Try Again :)');
+}
+
