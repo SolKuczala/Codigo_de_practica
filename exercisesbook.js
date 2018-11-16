@@ -13,12 +13,12 @@ function permiso() {
 }
 
 //new insults ponele
-let insults = ['forro','pelotudo','caraculo','pija rota','conshudo'];
+let insults = ['melon','dolobu','carachulo','picha rota','conshudo'];
 console.log('Sos un '+ insults[Math.floor(Math.random()* insults.length)] + ' y un '
 + insults[Math.floor(Math.random()* insults.length)]);
 
 //more sophisticated insults
-let partesDelCuerpo = ['panza','pelo','culo','cabeza'] 
+let partesDelCuerpo = ['panza','pelo','pulo','cabeza'] 
 let Adjetivos = ['oloroso','grande','horrible','peludo']
 let partesDunAnimal = ['puercoespin','mono','comadreja','oruga']
 const randomParteCuerpo = partesDelCuerpo[Math.floor(Math.random()* partesDelCuerpo.length)];
